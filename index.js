@@ -1,25 +1,13 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 const app = express();
+
 const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
     res.send('<h1>Hello, World!</h1>')
-});
-
-app.post('/submit', (req, res) => {
-    res.sendStatus(201);
-});
-
-app.put('/user/puppy', (req, res) => {
-    res.sendStatus(200);
-});
-
-app.patch('/user/puppy', (req, res) => {
-    res.sendStatus(200);
-});
-
-app.delete('/user/puppy', (req, res) => {
-    res.sendStatus(200);
 });
 
 app.listen(port, () => {
