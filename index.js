@@ -6,6 +6,22 @@ app.get('/', (req, res) => {
     res.send('<h1>Hello, World!</h1>')
 });
 
+app.post('/submit', (req, res) => {
+    res.sendStatus(201);
+});
+
+app.put('/user/puppy', (req, res) => {
+    res.sendStatus(200);
+});
+
+app.patch('/user/puppy', (req, res) => {
+    res.sendStatus(200);
+});
+
+app.delete('/user/puppy', (req, res) => {
+    res.sendStatus(200);
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}.`);   
 });
