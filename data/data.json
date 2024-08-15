@@ -1,0 +1,107 @@
+[
+  {
+    "id": 0,
+    "title": "Adote com Consciência",
+    "site": "",
+    "facebook": "https://www.facebook.com/adotecomconsciencia",
+    "instagram": "https://www.instagram.com/adotecomconsciencia"
+  },
+  {
+    "id": 1,
+    "title": "Associação Beneficente Amor Sem Raça",
+    "site": "https://amorsemraca.org/",
+    "facebook": "https://www.facebook.com/associacaoamorsemraca",
+    "instagram": "https://www.instagram.com/amorsemracaassociacao"
+  },
+  {
+    "id": 2,
+    "title": "Associação do Amigo Animal",
+    "site": "https://amigoanimal.org.br",
+    "facebook": "https://www.facebook.com/AmigoAnimalCaes",
+    "instagram": "https://www.instagram.com/amigoanimalpr"
+  },
+  {
+    "id": 3,
+    "title": "AVAN – Associação Vida Animal",
+    "site": "",
+    "facebook": "https://www.facebook.com/avancuritiba",
+    "instagram": "https://www.instagram.com/avan.associacaovidaanimal"
+  },
+  {
+    "id": 4,
+    "title": "Beco da Esperança",
+    "site": "http://becodaesperanca.org",
+    "facebook": "https://www.facebook.com/becodaesperanca.org",
+    "instagram": "https://www.instagram.com/becodaesperanca"
+  },
+  {
+    "id": 5,
+    "title": "Cãopanheiro Curitiba",
+    "site": "http://www.caopanheirocuritiba.com.br",
+    "facebook": "https://www.facebook.com/caopanheirocuritiba",
+    "instagram": ""
+  },
+  {
+    "id": 6,
+    "title": "Instituto Cão Amigo & Cia",
+    "site": "",
+    "facebook": "https://www.facebook.com/caoamigoecia",
+    "instagram": "https://www.instagram.com/caoamigo/"
+  },
+  {
+    "id": 7,
+    "title": "PROBEM – Associação de Proteção e Bem Estar Animal",
+    "site": "",
+    "facebook": "https://www.facebook.com/probem.curitiba",
+    "instagram": ""
+  },
+  {
+    "id": 8,
+    "title": "Projeto Animais Sem Teto",
+    "site": "http://animaissemteto.com.br",
+    "facebook": "https://www.facebook.com/animaissemteto",
+    "instagram": "https://www.instagram.com/animaissemteto"
+  },
+  {
+    "id": 9,
+    "title": "Quatro Patas",
+    "site": "https://institutosos4patasparana.org",
+    "facebook": "https://www.facebook.com/pages/Quatro-Patas-Grupo-de-Prote%C3%A7%C3%A3o-Animal/186249145660421",
+    "instagram": "https://www.instagram.com/sos4patas.pr"
+  },
+  {
+    "id": 10,
+    "title": "Salva Bicho ",
+    "site": "",
+    "facebook": "https://www.facebook.com/ongsalvabicho",
+    "instagram": "https://www.instagram.com/salvabicho"
+  },
+  {
+    "id": 11,
+    "title": "Sociedade Protetora dos Animais de Curitiba",
+    "site": "https://spacuritiba.org.br",
+    "facebook": "https://www.facebook.com/SPACuritiba",
+    "instagram": "https://www.instagram.com/spacuritiba"
+  },
+  {
+    "id": 12,
+    "title": "SOS Bicho",
+    "site": "https://movimentososbicho.blogspot.com",
+    "facebook": "https://www.facebook.com/sosbichodireitoanimal",
+    "instagram": ""
+  },
+  {
+    "id": 13,
+    "title": "Tampinhas Curitiba Ecopet",
+    "site": "",
+    "facebook": "https://www.facebook.com/curitibaecopettampinhas",
+    "instagram": "https://www.instagram.com/curitibaecopettampinhas"
+  },
+  {
+    "id": 14,
+    "title": "Tomba Latas",
+    "site": "https://www.facebook.com/tombalatas",
+    "facebook": "https://www.facebook.com/tombalatas",
+    "instagram": "https://www.instagram.com/tombalatas"
+  }
+]
