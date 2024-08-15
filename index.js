@@ -1,5 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import data from './data/data.json' assert { type: 'json' };
+
 const app = express();
 const port = 3000;
 
@@ -8,7 +10,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send('<h1>Hello, World!</h1>')
+    // console.log(data);
+    res.render('index', { data });
 });
 
 app.listen(port, () => {

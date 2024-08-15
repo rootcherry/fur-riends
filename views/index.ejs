@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fur-riends Fur-ever</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Fur-riends Fur-ever</h1>
     <!-- render data -->
-    <%=  %>
-</body>
+    <div>
+      <% data.forEach((item) => { %>
+        <!-- <p><%= item.id %></p> -->
+        <h2><%= item.title %></h2>
+        <p>Site: <%= item.site %></p>
+        <p>Facebook: <%= item.facebook %></p>
+        <p>Instagram: <%= item.instagram %></p>
+      <% }); %>
+    </div>
+  </body>
 </html>
