@@ -16,7 +16,6 @@
     <div class="container">
       <h2>Ajude uma ONG.</h2>
       <!-- render data -->
-      <div>
         <% data.forEach((item) => { %>
           <!-- <p><%= item.id %></p> -->
           <p><span><strong><%= item.title %></strong></span></p>
@@ -24,8 +23,7 @@
           <p>Facebook: </span><a><%= item.facebook %></a></p>
           <p>Instagram: </span><a><%= item.instagram %></a></p>
         <% }); %>
-      </div>
-    </section>
     </div>
+  </section>
 
 <%- include('partials/footer.ejs') %>
