@@ -1,0 +1,36 @@
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+li {
+    display: inline-block;
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #91be55;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+

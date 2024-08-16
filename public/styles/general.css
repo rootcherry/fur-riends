@@ -1,0 +1,43 @@
+/* colors 
+hero text: #ffffff
+h1 h2 p  : #262626
+btn gre white: #91be55 #ffffff
+btn gre white p: 12px 32px
+btn black white: #000000 #ffffff
+btn grey white color black: #e8e8e8
+grid icon #91be55
+grid h3: #262626
+grid p: #616161
+grid detail: #b3b3b3
+footer bgc: #212327
+footer box: #17181c
+footer text: #ffffff */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px;
+    10px / 16px = 0.625 = 62.5%
+    % do navegador do usuário */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+section {
+    padding: 96px 0;
+}

@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fur-riends Fur-ever</title>
-  </head>
-  <body>
-    <h1>Fur-riends Fur-ever</h1>
-    <!-- render data -->
-    <div>
-      <% data.forEach((item) => { %>
-        <!-- <p><%= item.id %></p> -->
-        <h2><%= item.title %></h2>
-        <p>Site: <%= item.site %></p>
-        <p>Facebook: <%= item.facebook %></p>
-        <p>Instagram: <%= item.instagram %></p>
-      <% }); %>
+<%- include('partials/header.ejs') %>
+
+  <section>
+    <div class="container">
+      <h2>Sobre</h2>
     </div>
-  </body>
-</html>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Ações</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Ajude uma ONG.</h2>
+      <!-- render data -->
+      <div>
+        <% data.forEach((item) => { %>
+          <!-- <p><%= item.id %></p> -->
+          <p><span><strong><%= item.title %></strong></span></p>
+          <p><span>Site: </span><a><%= item.site %></a></p>
+          <p>Facebook: </span><a><%= item.facebook %></a></p>
+          <p>Instagram: </span><a><%= item.instagram %></a></p>
+        <% }); %>
+      </div>
+    </section>
+    </div>
+
+<%- include('partials/footer.ejs') %>
