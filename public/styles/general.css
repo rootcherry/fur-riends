@@ -11,7 +11,10 @@ grid p: #616161
 grid detail: #b3b3b3
 footer bgc: #212327
 footer box: #17181c
-footer text: #ffffff */
+footer text: #ffffff 
+max-width: 500rem;
+1 rem = 16px
+*/
 
 * {
     padding: 0;
