@@ -141,7 +141,7 @@ section {
   }
   
   .about-section {
-    background-color: #91be55;
+    background-color: #91be55 !important;
     color: #ffffff;
     /* padding: 48px 0; */
   }
