@@ -1,15 +1,23 @@
 <%- include('partials/header.ejs') %>
-  <!-- QUOTE -->
+
+<!-- QUOTE -->
 <section class="quote-section">
-  <div class="container quote">
-    <p><span><strong>“Nossos animais de estimação têm uma vida tão curta para passar conosco, e ainda assim, passam a maior parte do tempo esperando que voltemos para casa todos os dias.
-    É impressionante o quanto de amor e alegria eles trazem para nossas vidas, e o quanto nos tornamos mais próximos uns dos outros por causa deles.”</strong></span></p>
-    <p class="author"><span>― John Grogan</span></p>
+  <div class="quote-container">
+    <blockquote>
+      <p>
+        <strong>
+          “Nossos animais de estimação têm uma vida tão curta para passar conosco, e ainda assim, passam a maior parte do tempo esperando que voltemos para casa todos os dias. É impressionante o quanto de amor e alegria eles trazem para nossas vidas, e o quanto nos tornamos mais próximos uns dos outros por causa deles.”
+        </strong>
+      </p>
+      <footer class="quote-author">
+        <p>― John Grogan</p>
+      </footer>
+    </blockquote>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about-section">
+<section class="about-section" id="sobre">
   <div class="about-content">
     <div class="about-text-box">
       <h2 class="header-text-sobre">Sobre</h2>
@@ -25,8 +33,8 @@
   </div>
 </section>
 
-  <!-- ACTIVITIES -->
-<section class="activities-section">
+<!-- ACTIVITIES -->
+<section class="activities-section" id="atividades">
   <div class="container-activities">
     <h2 class="header-text-activities">Algumas das atividades realizadas</h2>
     <ul class="act-list">
@@ -40,7 +48,7 @@
             Resgatar, reabilitar e realojar cães, gatos e outros animais de situações de perigo e maus-tratos.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
           </div>
@@ -56,7 +64,7 @@
             A castração é uma das medidas mais eficazes para controlar a população de animais de rua e prevenir doenças.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
         </div>
@@ -71,7 +79,7 @@
             Providenciar cuidados veterinários, incluindo vacinação, tratamento de doenças e reabilitação.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
         </div>
@@ -86,7 +94,7 @@
             Promover campanhas de conscientização, palestras em escolas, materiais educativos e presença nas redes sociais.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
         </div>
@@ -101,7 +109,7 @@
             Programas de voluntariado para pessoas interessadas realizar suas atividades, contribuindo com seu tempo e habilidades.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
         </div>
@@ -116,7 +124,7 @@
             Facilitar a adoção responsável de animais selecionando cuidadosamente a melhor correspondência de perfil entre animais e famílias.
           </p>
           <div>
-            <a href="#" class="link">
+            <a href="#doacao" class="link">
               <span>Saiba mais &#8594;</span>
             </a>
         </div>
@@ -125,19 +133,28 @@
   </div>
 </section>
 
-  <!-- HELP -->
-  <section>
-    <div class="container">
-      <h2>Ajude uma ONG.</h2>
-      <!-- render data -->
-        <% data.forEach((item) => { %>
-          <!-- <p><%= item.id %></p> -->
-          <p><span><strong><%= item.title %></strong></span></p>
-          <p><span>Site: </span><a><%= item.site %></a></p>
-          <p>Facebook: </span><a><%= item.facebook %></a></p>
-          <p>Instagram: </span><a><%= item.instagram %></a></p>
-        <% }); %>
+<!-- HELP -->
+<section class="help-section" id="doacao">
+  <div class="help-container">
+    <h2 class="section-title">Ajude uma ONG</h2>
+    <div class="help-grid">
+      <% data.forEach((item) => { %>
+        <article class="help-card">
+          <div class="help-card-header">
+            <h3 class="help-title"><%= item.title %></h3>
+          </div>
+          <div class="help-card-body">
+            <p><strong>Site:</strong> <a href="<%= item.site %>" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> <%= item.site %></a></p>
+            <p><strong>Facebook:</strong> <a href="<%= item.facebook %>" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook-f"></i></a></p>
+            <p><strong>Instagram:</strong> <a href="<%= item.instagram %>" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a></p>
+          </div>
+        </article>
+      <% }); %>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
 
 <%- include('partials/footer.ejs') %>
