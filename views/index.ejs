@@ -140,16 +140,34 @@
     <div class="help-grid">
       <% data.forEach((item) => { %>
         <article class="help-card">
-          <div class="help-card-header">
-            <h3 class="help-title"><%= item.title %></h3>
-          </div>
-          <div class="help-card-body">
-            <p><strong>Site:</strong> <a href="<%= item.site %>" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> <%= item.site %></a></p>
-            <p><strong>Facebook:</strong> <a href="<%= item.facebook %>" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-facebook-f"></i></a></p>
-            <p><strong>Instagram:</strong> <a href="<%= item.instagram %>" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-instagram"></i></a></p>
-          </div>
+            <div class="help-card-header">
+                <h3 class="help-title"><%= item.title %></h3>
+            </div>
+            <div class="help-card-body">
+                <p><strong>Site:</strong> 
+                    <% if (item.site) { %>
+                        <a href="<%= item.site %>" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> <%= item.site %></a>
+                    <% } else { %>
+                        <span>Não disponível</span>
+                    <% } %>
+                </p>
+                <p><strong>Facebook:</strong>
+                    <% if (item.facebook) { %>
+                        <a href="<%= item.facebook %>" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <% } else { %>
+                        <span>Não disponível</span>
+                    <% } %>
+                </p>
+                <p><strong>Instagram:</strong>
+                    <% if (item.instagram) { %>
+                        <a href="<%= item.instagram %>" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <% } else { %>
+                        <span>Não disponível</span>
+                    <% } %>
+                </p>
+            </div>
         </article>
-      <% }); %>
+    <% }); %>
     </div>
   </div>
 </section>

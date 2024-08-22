@@ -378,6 +378,11 @@ blockquote p {
   flex: 1 1 calc(33.333% - 20px);
 }
 
+.help-card a:focus {
+  outline: 2px solid #91be55; /* color that contrasts well */
+  outline-offset: 2px;
+}
+
 .help-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -410,8 +415,13 @@ blockquote p {
 }
 
 .help-card i {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px; /* Space | icon and text */
 }
+
+.help-card:focus {
+  outline: 2px solid #91be55;
+}
+
 
 .social-link i {
   font-size: 1.6rem;
@@ -458,3 +468,5 @@ blockquote p {
 .footer-bottom p {
   font-size: 1.4rem;
 }
+
+/* RESPONSIVE */
