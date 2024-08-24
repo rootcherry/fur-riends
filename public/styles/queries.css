@@ -1,0 +1,277 @@
+/* rem and em do NOT depend on html font-size in media queries 
+Instead, 1rem = 1em = 16px */
+
+/* 1350/16 */
+/* Below 1344px (84*16) (Smaller desktops) */
+/* @media (max-width: 84em) {
+    .container {
+        max-width: 120rem;
+    }
+} */
+/* @media (max-width: 1286px) {
+  header {
+    background-size: cover;
+    background-position: center center;
+  } */
+
+/* .header-container {
+    width: 100%;
+    text-align: center;
+    top: auto;
+    left: auto;
+    transform: none;
+    position: relative;
+    padding: 20px;
+  }
+
+  .header-container-inner {
+    width: 100%;
+  }
+
+  .header-container-inner h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .header-container-inner p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: center;
+  } */
+/* } */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 950px) {
+  /* ACTIVITIES */
+  .act-list li {
+    flex: 1 1 calc(50% - 20px); /* 2 cols with gap */
+  }
+
+  /* HELP */
+  .help-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cols with gap */
+  }
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+
+  /* hide nav links */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    max-height: 80vh; /* max height */
+    overflow-y: auto; /* allow vertical scrolling */
+  }
+
+  /* show the burguer menu */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .btn-link {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  /* QUOTE */
+  .quote-section {
+    padding: 2rem 1rem;
+  }
+
+  .quote-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  blockquote {
+    font-size: 1.6rem;
+    padding-left: 10px;
+  }
+
+  .quote-author {
+    font-size: 1.4rem;
+    margin-top: 8px;
+  }
+
+  /* ABOUT */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    order: 2; /* place img after the text */
+    margin-top: 20px; /* space between text and img */
+  }
+
+  .about-text-box {
+    order: 1; /* place text before the img */
+  }
+
+  .about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* FOOTER */
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-nav a {
+    font-size: 1.4rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* ACTIVITIES */
+  .act-list li {
+    flex: 1 1 100%; /* cards in a single col */
+  }
+
+  /* HELP */
+  .help-card {
+    flex: 1 1 100%; /* cards in a single col */
+  }
+}
+
+@media (max-width: 480px) {
+  /* HEADER */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .header-container-inner h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-container-inner p {
+    font-size: 1.2rem;
+  }
+
+  .btn-link {
+    font-size: 1.2rem;
+  }
+
+  /* QUOTE */
+  .quote-section {
+    padding: 1.5rem 0.5rem; 
+  }
+
+  .quote-container {
+    padding: 0 0.5rem; 
+  }
+
+  blockquote {
+    font-size: 1.4rem; 
+    padding-left: 5px; 
+  }
+
+  .quote-author {
+    font-size: 1.2rem; 
+    margin-top: 5px;
+  }
+
+  /* FOOTER */
+  .footer-nav a {
+    font-size: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+}
