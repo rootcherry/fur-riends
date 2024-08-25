@@ -4,6 +4,7 @@ header {
   position: relative;
   background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
     url(../images/hero.webp);
+  /* Photo by <a href="https://unsplash.com/@annadinger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anna Dinger</a> on <a href="https://unsplash.com/photos/a-woman-is-kissing-a-dog-with-her-nose-XeW6erG61cw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
