@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import data from './data/data.json' assert { type: 'json' };
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.set('view engine', 'ejs');
 
