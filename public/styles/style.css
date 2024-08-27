@@ -2,6 +2,7 @@
 header {
   height: 100vh;
   position: relative;
+  background-color: #222222;
   background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
     url(../images/hero.webp);
   /* Photo by <a href="https://unsplash.com/@annadinger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anna Dinger</a> on <a href="https://unsplash.com/photos/a-woman-is-kissing-a-dog-with-her-nose-XeW6erG61cw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
@@ -10,7 +11,6 @@ header {
   background-repeat: no-repeat;
   color: #ffffff;
   overflow: hidden;
-  background-color: #222222;
 }
 
 .header-container {
