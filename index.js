@@ -1,6 +1,9 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import data from './data/data.json' assert { type: 'json' };
+import fs from 'fs';
+
+// Lê o arquivo JSON de forma síncrona
+const data = JSON.parse(fs.readFileSync('./data/data.json', 'utf-8'));
 
 const app = express();
 const port = 8000;
@@ -16,5 +19,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}.`);   
+    console.log(`Server is running on port ${port}.`);
 });
